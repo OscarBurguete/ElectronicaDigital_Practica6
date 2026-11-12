@@ -1,0 +1,49 @@
+
+// Salida Trigger (Hacia el sensor HC-SR04)
+IO_LOC "trigger" 73;
+IO_PORT "trigger" IO_TYPE=LVCMOS33 BANK_VCCIO=3.3 DRIVE=8;
+
+// Entrada Echo (Desde el sensor HC-SR04 a través de resistencia de 220 ohm)
+IO_LOC "echo" 27;
+IO_PORT "echo" IO_TYPE=LVCMOS33 PULL_MODE=DOWN BANK_VCCIO=3.3;
+
+// ==========================================
+// SALIDAS: Pantalla 7 Segmentos (a - g)
+// ==========================================
+
+IO_LOC "a" 51;
+IO_PORT "a" IO_TYPE=LVCMOS33 PULL_MODE=UP DRIVE=8 BANK_VCCIO=3.3;
+
+IO_LOC "b" 48;
+IO_PORT "b" IO_TYPE=LVCMOS33 PULL_MODE=UP DRIVE=8 BANK_VCCIO=3.3;
+
+IO_LOC "c" 86;
+IO_PORT "c" IO_TYPE=LVCMOS33 PULL_MODE=UP DRIVE=8 BANK_VCCIO=3.3;
+
+IO_LOC "d" 41;
+IO_PORT "d" IO_TYPE=LVCMOS33 PULL_MODE=UP DRIVE=8 BANK_VCCIO=3.3;
+
+IO_LOC "e" 42;
+IO_PORT "e" IO_TYPE=LVCMOS33 PULL_MODE=UP DRIVE=8 BANK_VCCIO=3.3;
+
+IO_LOC "f" 80;
+IO_PORT "f" IO_TYPE=LVCMOS33 PULL_MODE=UP DRIVE=8 BANK_VCCIO=3.3;
+
+IO_LOC "g" 76;
+IO_PORT "g" IO_TYPE=LVCMOS33 PULL_MODE=UP DRIVE=8 BANK_VCCIO=3.3;
+
+//==============================================
+// Salidas display selectors
+//==============================================
+IO_LOC "disp_c" 85;
+IO_PORT "disp_c" IO_TYPE=LVCMOS33 PULL_MODE=UP DRIVE=8 BANK_VCCIO=3.3;
+
+IO_LOC "disp_d" 75;
+IO_PORT "disp_d" IO_TYPE=LVCMOS33 PULL_MODE=UP DRIVE=8 BANK_VCCIO=3.3;
+
+IO_LOC "disp_u" 74;
+IO_PORT "disp_u" IO_TYPE=LVCMOS33 PULL_MODE=UP DRIVE=8 BANK_VCCIO=3.3;
+
+// Reloj de la FPGA (27 MHz en el pin 4)
+IO_LOC "clk" 4;
+IO_PORT "clk" IO_TYPE=LVCMOS33 PULL_MODE=UP BANK_VCCIO=3.3;

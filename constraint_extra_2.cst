@@ -1,0 +1,58 @@
+// Salida PWM hacia el Optoacoplador PC817
+IO_LOC "pwm" 20;
+IO_PORT "pwm" IO_TYPE=LVCMOS33 PULL_MODE=UP DRIVE=8 BANK_VCCIO=3.3;
+
+// Entradas del DIP Switch (duty[3:0])
+IO_LOC "duty[3]" 18;
+IO_PORT "duty[3]" IO_TYPE=LVCMOS33 PULL_MODE=DOWN BANK_VCCIO=3.3;
+
+IO_LOC "duty[2]" 17;
+IO_PORT "duty[2]" IO_TYPE=LVCMOS33 PULL_MODE=DOWN BANK_VCCIO=3.3;
+
+IO_LOC "duty[1]" 16;
+IO_PORT "duty[1]" IO_TYPE=LVCMOS33 PULL_MODE=DOWN BANK_VCCIO=3.3;
+
+IO_LOC "duty[0]" 15;
+IO_PORT "duty[0]" IO_TYPE=LVCMOS33 PULL_MODE=DOWN BANK_VCCIO=3.3;
+
+// ==========================================
+// SALIDAS: Pantalla 7 Segmentos (a - g)
+// ==========================================
+
+IO_LOC "a" 51;
+IO_PORT "a" IO_TYPE=LVCMOS33 PULL_MODE=UP DRIVE=8 BANK_VCCIO=3.3;
+
+IO_LOC "b" 48;
+IO_PORT "b" IO_TYPE=LVCMOS33 PULL_MODE=UP DRIVE=8 BANK_VCCIO=3.3;
+
+IO_LOC "c" 86;
+IO_PORT "c" IO_TYPE=LVCMOS33 PULL_MODE=UP DRIVE=8 BANK_VCCIO=3.3;
+
+IO_LOC "d" 41;
+IO_PORT "d" IO_TYPE=LVCMOS33 PULL_MODE=UP DRIVE=8 BANK_VCCIO=3.3;
+
+IO_LOC "e" 42;
+IO_PORT "e" IO_TYPE=LVCMOS33 PULL_MODE=UP DRIVE=8 BANK_VCCIO=3.3;
+
+IO_LOC "f" 80;
+IO_PORT "f" IO_TYPE=LVCMOS33 PULL_MODE=UP DRIVE=8 BANK_VCCIO=3.3;
+
+IO_LOC "g" 76;
+IO_PORT "g" IO_TYPE=LVCMOS33 PULL_MODE=UP DRIVE=8 BANK_VCCIO=3.3;
+
+//==============================================
+// Salidas display selectors
+//==============================================
+
+IO_LOC "disp_c" 85;
+IO_PORT "disp_c" IO_TYPE=LVCMOS33 PULL_MODE=UP DRIVE=8 BANK_VCCIO=3.3;
+
+IO_LOC "disp_d" 75;
+IO_PORT "disp_d" IO_TYPE=LVCMOS33 PULL_MODE=UP DRIVE=8 BANK_VCCIO=3.3;
+
+IO_LOC "disp_u" 74;
+IO_PORT "disp_u" IO_TYPE=LVCMOS33 PULL_MODE=UP DRIVE=8 BANK_VCCIO=3.3;
+
+// Reloj de la FPGA (27 MHz en el pin 4)
+IO_LOC "clk" 4;
+IO_PORT "clk" IO_TYPE=LVCMOS33 PULL_MODE=UP BANK_VCCIO=3.3;

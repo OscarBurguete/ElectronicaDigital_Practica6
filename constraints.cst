@@ -1,0 +1,21 @@
+// Archivo de Restricciones Fisicas (.cst) para Tang Nano 20K (GW2AR-18)
+// Salida PWM hacia el Optoacoplador PC817
+IO_LOC "pwm" 20;
+IO_PORT "pwm" IO_TYPE=LVCMOS33 PULL_MODE=UP DRIVE=8 BANK_VCCIO=3.3;
+
+// Entradas del DIP Switch (duty[3:0])
+IO_LOC "duty[3]" 18;
+IO_PORT "duty[3]" IO_TYPE=LVCMOS33 PULL_MODE=DOWN BANK_VCCIO=3.3;
+
+IO_LOC "duty[2]" 17;
+IO_PORT "duty[2]" IO_TYPE=LVCMOS33 PULL_MODE=DOWN BANK_VCCIO=3.3;
+
+IO_LOC "duty[1]" 16;
+IO_PORT "duty[1]" IO_TYPE=LVCMOS33 PULL_MODE=DOWN BANK_VCCIO=3.3;
+
+IO_LOC "duty[0]" 15;
+IO_PORT "duty[0]" IO_TYPE=LVCMOS33 PULL_MODE=DOWN BANK_VCCIO=3.3;
+
+// Reloj de la FPGA (27 MHz en el pin 4)
+IO_LOC "clk" 4;
+IO_PORT "clk" IO_TYPE=LVCMOS33 PULL_MODE=UP BANK_VCCIO=3.3;
